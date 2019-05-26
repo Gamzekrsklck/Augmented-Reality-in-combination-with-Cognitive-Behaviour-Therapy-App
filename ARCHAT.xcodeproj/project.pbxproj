@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19184E16BF1EC95FB88A8143 /* Pods_ARCHAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360403EDF63A4FE71AAC97D0 /* Pods_ARCHAT.framework */; };
+		5D066CCF2270C86300304DD9 /* ViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D066CCC2270C86300304DD9 /* ViewController+ARSCNViewDelegate.swift */; };
+		5D066CD02270C86300304DD9 /* ViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D066CCD2270C86300304DD9 /* ViewController+Actions.swift */; };
+		5D066CD12270C86300304DD9 /* ViewController+ObjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D066CCE2270C86300304DD9 /* ViewController+ObjectSelection.swift */; };
+		5D33B99A226F963400279F01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33B999226F963400279F01 /* AppDelegate.swift */; };
+		5D33B99C226F963400279F01 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D33B99B226F963400279F01 /* art.scnassets */; };
+		5D33B99E226F963400279F01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33B99D226F963400279F01 /* ViewController.swift */; };
+		5D33B9A1226F963400279F01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D33B99F226F963400279F01 /* Main.storyboard */; };
+		5D33B9A3226F963400279F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D33B9A2226F963400279F01 /* Assets.xcassets */; };
+		5D33B9A6226F963400279F01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D33B9A4226F963400279F01 /* LaunchScreen.storyboard */; };
+		5D33B9B1226F963400279F01 /* ARCHATTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33B9B0226F963400279F01 /* ARCHATTests.swift */; };
+		5D33B9BC226F963400279F01 /* ARCHATUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33B9BB226F963400279F01 /* ARCHATUITests.swift */; };
+		5DB926CF226FF58D006134A5 /* VirtualObjectSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB926CD226FF58D006134A5 /* VirtualObjectSelectionViewController.swift */; };
+		5DB926D0226FF58D006134A5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB926CE226FF58D006134A5 /* SettingsViewController.swift */; };
+		5DC47EEF226FF6A4004AB0B1 /* ARSCNView+HitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC47EEB226FF6A4004AB0B1 /* ARSCNView+HitTests.swift */; };
+		5DC47EF0226FF6A4004AB0B1 /* SceneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC47EEC226FF6A4004AB0B1 /* SceneExtensions.swift */; };
+		5DC47EF1226FF6A4004AB0B1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC47EED226FF6A4004AB0B1 /* Utilities.swift */; };
+		5DC47EF2226FF6A4004AB0B1 /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC47EEE226FF6A4004AB0B1 /* TextManager.swift */; };
+		5DC47EF7226FF6CC004AB0B1 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC47EF4226FF6CC004AB0B1 /* Plane.swift */; };
+		5DC47EFD226FF6FB004AB0B1 /* VirtualObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC47EFB226FF6FB004AB0B1 /* VirtualObjectManager.swift */; };
+		5DC47EFE226FF6FB004AB0B1 /* VirtualObjects.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DC47EFC226FF6FB004AB0B1 /* VirtualObjects.json */; };
+		5DC47F00226FF836004AB0B1 /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC47EFF226FF836004AB0B1 /* VirtualObject.swift */; };
+		5DC47F07226FF8A6004AB0B1 /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC47F05226FF8A6004AB0B1 /* FocusSquareSegment.swift */; };
+		5DC47F08226FF8A6004AB0B1 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC47F06226FF8A6004AB0B1 /* FocusSquare.swift */; };
+		5DC47F0C226FF8B7004AB0B1 /* TwoFingerGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC47F09226FF8B7004AB0B1 /* TwoFingerGesture.swift */; };
+		5DC47F0D226FF8B7004AB0B1 /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC47F0A226FF8B7004AB0B1 /* Gesture.swift */; };
+		5DC47F0E226FF8B7004AB0B1 /* SingleFingerGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC47F0B226FF8B7004AB0B1 /* SingleFingerGesture.swift */; };
+		5DC73E60226FA42E007F2499 /* AR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC73E5F226FA42E007F2499 /* AR.swift */; };
+		5DEB5D712270E60C00A07940 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DEB5D702270E60C00A07940 /* Models.scnassets */; };
+		91909CD70749EF547DB3E323 /* Pods_ARCHATUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5028EABF0F0BB05000886D /* Pods_ARCHATUITests.framework */; };
+		9636F574800F97671ADFDAB8 /* Pods_ARCHATTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A192D36BBE3F72A2E686C885 /* Pods_ARCHATTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D33B9AD226F963400279F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D33B98E226F963400279F01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D33B995226F963400279F01;
+			remoteInfo = ARCHAT;
+		};
+		5D33B9B8226F963400279F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D33B98E226F963400279F01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D33B995226F963400279F01;
+			remoteInfo = ARCHAT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		334789E0E281E82241E831FC /* Pods-ARCHATUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCHATUITests.release.xcconfig"; path = "Target Support Files/Pods-ARCHATUITests/Pods-ARCHATUITests.release.xcconfig"; sourceTree = "<group>"; };
+		360403EDF63A4FE71AAC97D0 /* Pods_ARCHAT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARCHAT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D066CCC2270C86300304DD9 /* ViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		5D066CCD2270C86300304DD9 /* ViewController+Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Actions.swift"; sourceTree = "<group>"; };
+		5D066CCE2270C86300304DD9 /* ViewController+ObjectSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ObjectSelection.swift"; sourceTree = "<group>"; };
+		5D33B996226F963400279F01 /* ARCHAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCHAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D33B999226F963400279F01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D33B99B226F963400279F01 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		5D33B99D226F963400279F01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5D33B9A0226F963400279F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D33B9A2226F963400279F01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D33B9A5226F963400279F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D33B9A7226F963400279F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D33B9AC226F963400279F01 /* ARCHATTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCHATTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D33B9B0226F963400279F01 /* ARCHATTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHATTests.swift; sourceTree = "<group>"; };
+		5D33B9B2226F963400279F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D33B9B7226F963400279F01 /* ARCHATUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCHATUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D33B9BB226F963400279F01 /* ARCHATUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHATUITests.swift; sourceTree = "<group>"; };
+		5D33B9BD226F963400279F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DB926CD226FF58D006134A5 /* VirtualObjectSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectSelectionViewController.swift; sourceTree = "<group>"; };
+		5DB926CE226FF58D006134A5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5DC47EEB226FF6A4004AB0B1 /* ARSCNView+HitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARSCNView+HitTests.swift"; sourceTree = "<group>"; };
+		5DC47EEC226FF6A4004AB0B1 /* SceneExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneExtensions.swift; sourceTree = "<group>"; };
+		5DC47EED226FF6A4004AB0B1 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		5DC47EEE226FF6A4004AB0B1 /* TextManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
+		5DC47EF4226FF6CC004AB0B1 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		5DC47EFB226FF6FB004AB0B1 /* VirtualObjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectManager.swift; sourceTree = "<group>"; };
+		5DC47EFC226FF6FB004AB0B1 /* VirtualObjects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VirtualObjects.json; sourceTree = "<group>"; };
+		5DC47EFF226FF836004AB0B1 /* VirtualObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
+		5DC47F05226FF8A6004AB0B1 /* FocusSquareSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquareSegment.swift; sourceTree = "<group>"; };
+		5DC47F06226FF8A6004AB0B1 /* FocusSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
+		5DC47F09226FF8B7004AB0B1 /* TwoFingerGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoFingerGesture.swift; sourceTree = "<group>"; };
+		5DC47F0A226FF8B7004AB0B1 /* Gesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gesture.swift; sourceTree = "<group>"; };
+		5DC47F0B226FF8B7004AB0B1 /* SingleFingerGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleFingerGesture.swift; sourceTree = "<group>"; };
+		5DC73E5F226FA42E007F2499 /* AR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR.swift; sourceTree = "<group>"; };
+		5DEB5D702270E60C00A07940 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		5E46F822C174652BC0FC7B69 /* Pods-ARCHAT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCHAT.release.xcconfig"; path = "Target Support Files/Pods-ARCHAT/Pods-ARCHAT.release.xcconfig"; sourceTree = "<group>"; };
+		5F9D856A9DC46CC45DC388FE /* Pods-ARCHATTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCHATTests.debug.xcconfig"; path = "Target Support Files/Pods-ARCHATTests/Pods-ARCHATTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A192D36BBE3F72A2E686C885 /* Pods_ARCHATTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARCHATTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48EAB86B7B66F7DB819116A /* Pods-ARCHATUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCHATUITests.debug.xcconfig"; path = "Target Support Files/Pods-ARCHATUITests/Pods-ARCHATUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC5028EABF0F0BB05000886D /* Pods_ARCHATUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARCHATUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B68C63D1AAC86686DA9EB44B /* Pods-ARCHAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCHAT.debug.xcconfig"; path = "Target Support Files/Pods-ARCHAT/Pods-ARCHAT.debug.xcconfig"; sourceTree = "<group>"; };
+		DE0D8153560F05B4770EF7CE /* Pods-ARCHATTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCHATTests.release.xcconfig"; path = "Target Support Files/Pods-ARCHATTests/Pods-ARCHATTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D33B993226F963400279F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19184E16BF1EC95FB88A8143 /* Pods_ARCHAT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D33B9A9226F963400279F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9636F574800F97671ADFDAB8 /* Pods_ARCHATTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D33B9B4226F963400279F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91909CD70749EF547DB3E323 /* Pods_ARCHATUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31C1EB90402F3F6996E1DFBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				360403EDF63A4FE71AAC97D0 /* Pods_ARCHAT.framework */,
+				A192D36BBE3F72A2E686C885 /* Pods_ARCHATTests.framework */,
+				AC5028EABF0F0BB05000886D /* Pods_ARCHATUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D33B98D226F963400279F01 = {
+			isa = PBXGroup;
+			children = (
+				5DC47EFA226FF6EB004AB0B1 /* Virtual Objects */,
+				5DC47EF3226FF6B4004AB0B1 /* UI Elements */,
+				5DC47EEA226FF682004AB0B1 /* Utilities */,
+				5DB926CC226FF57D006134A5 /* Additional View Controllers */,
+				5D33B998226F963400279F01 /* ARCHAT */,
+				5D33B9AF226F963400279F01 /* ARCHATTests */,
+				5D33B9BA226F963400279F01 /* ARCHATUITests */,
+				5D33B997226F963400279F01 /* Products */,
+				F9B8B1A477EAF554C1BC7BB3 /* Pods */,
+				31C1EB90402F3F6996E1DFBC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5D33B997226F963400279F01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D33B996226F963400279F01 /* ARCHAT.app */,
+				5D33B9AC226F963400279F01 /* ARCHATTests.xctest */,
+				5D33B9B7226F963400279F01 /* ARCHATUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D33B998226F963400279F01 /* ARCHAT */ = {
+			isa = PBXGroup;
+			children = (
+				5D33B999226F963400279F01 /* AppDelegate.swift */,
+				5D33B99B226F963400279F01 /* art.scnassets */,
+				5D33B99D226F963400279F01 /* ViewController.swift */,
+				5DC73E5F226FA42E007F2499 /* AR.swift */,
+				5D066CCD2270C86300304DD9 /* ViewController+Actions.swift */,
+				5D066CCC2270C86300304DD9 /* ViewController+ARSCNViewDelegate.swift */,
+				5D066CCE2270C86300304DD9 /* ViewController+ObjectSelection.swift */,
+				5D33B99F226F963400279F01 /* Main.storyboard */,
+				5D33B9A2226F963400279F01 /* Assets.xcassets */,
+				5DEB5D702270E60C00A07940 /* Models.scnassets */,
+				5D33B9A4226F963400279F01 /* LaunchScreen.storyboard */,
+				5D33B9A7226F963400279F01 /* Info.plist */,
+			);
+			path = ARCHAT;
+			sourceTree = "<group>";
+		};
+		5D33B9AF226F963400279F01 /* ARCHATTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D33B9B0226F963400279F01 /* ARCHATTests.swift */,
+				5D33B9B2226F963400279F01 /* Info.plist */,
+			);
+			path = ARCHATTests;
+			sourceTree = "<group>";
+		};
+		5D33B9BA226F963400279F01 /* ARCHATUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5D33B9BB226F963400279F01 /* ARCHATUITests.swift */,
+				5D33B9BD226F963400279F01 /* Info.plist */,
+			);
+			path = ARCHATUITests;
+			sourceTree = "<group>";
+		};
+		5DB926CC226FF57D006134A5 /* Additional View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DB926CE226FF58D006134A5 /* SettingsViewController.swift */,
+				5DB926CD226FF58D006134A5 /* VirtualObjectSelectionViewController.swift */,
+			);
+			path = "Additional View Controllers";
+			sourceTree = "<group>";
+		};
+		5DC47EEA226FF682004AB0B1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5DC47EEB226FF6A4004AB0B1 /* ARSCNView+HitTests.swift */,
+				5DC47EEC226FF6A4004AB0B1 /* SceneExtensions.swift */,
+				5DC47EEE226FF6A4004AB0B1 /* TextManager.swift */,
+				5DC47EED226FF6A4004AB0B1 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5DC47EF3226FF6B4004AB0B1 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				5DC47F06226FF8A6004AB0B1 /* FocusSquare.swift */,
+				5DC47F05226FF8A6004AB0B1 /* FocusSquareSegment.swift */,
+				5DC47F0A226FF8B7004AB0B1 /* Gesture.swift */,
+				5DC47F0B226FF8B7004AB0B1 /* SingleFingerGesture.swift */,
+				5DC47F09226FF8B7004AB0B1 /* TwoFingerGesture.swift */,
+				5DC47EF4226FF6CC004AB0B1 /* Plane.swift */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
+		5DC47EFA226FF6EB004AB0B1 /* Virtual Objects */ = {
+			isa = PBXGroup;
+			children = (
+				5DC47EFF226FF836004AB0B1 /* VirtualObject.swift */,
+				5DC47EFB226FF6FB004AB0B1 /* VirtualObjectManager.swift */,
+				5DC47EFC226FF6FB004AB0B1 /* VirtualObjects.json */,
+			);
+			path = "Virtual Objects";
+			sourceTree = "<group>";
+		};
+		F9B8B1A477EAF554C1BC7BB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B68C63D1AAC86686DA9EB44B /* Pods-ARCHAT.debug.xcconfig */,
+				5E46F822C174652BC0FC7B69 /* Pods-ARCHAT.release.xcconfig */,
+				5F9D856A9DC46CC45DC388FE /* Pods-ARCHATTests.debug.xcconfig */,
+				DE0D8153560F05B4770EF7CE /* Pods-ARCHATTests.release.xcconfig */,
+				A48EAB86B7B66F7DB819116A /* Pods-ARCHATUITests.debug.xcconfig */,
+				334789E0E281E82241E831FC /* Pods-ARCHATUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D33B995226F963400279F01 /* ARCHAT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D33B9C0226F963400279F01 /* Build configuration list for PBXNativeTarget "ARCHAT" */;
+			buildPhases = (
+				F45F8498022B9BB8FAA31E44 /* [CP] Check Pods Manifest.lock */,
+				5D33B992226F963400279F01 /* Sources */,
+				5D33B993226F963400279F01 /* Frameworks */,
+				5D33B994226F963400279F01 /* Resources */,
+				2EB44ADA6C240F28CB3F6020 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARCHAT;
+			productName = ARCHAT;
+			productReference = 5D33B996226F963400279F01 /* ARCHAT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D33B9AB226F963400279F01 /* ARCHATTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D33B9C3226F963400279F01 /* Build configuration list for PBXNativeTarget "ARCHATTests" */;
+			buildPhases = (
+				708870D40D9A9554DE34A9F1 /* [CP] Check Pods Manifest.lock */,
+				5D33B9A8226F963400279F01 /* Sources */,
+				5D33B9A9226F963400279F01 /* Frameworks */,
+				5D33B9AA226F963400279F01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D33B9AE226F963400279F01 /* PBXTargetDependency */,
+			);
+			name = ARCHATTests;
+			productName = ARCHATTests;
+			productReference = 5D33B9AC226F963400279F01 /* ARCHATTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5D33B9B6226F963400279F01 /* ARCHATUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D33B9C6226F963400279F01 /* Build configuration list for PBXNativeTarget "ARCHATUITests" */;
+			buildPhases = (
+				E69B1C0DE20CFA6C8C53018F /* [CP] Check Pods Manifest.lock */,
+				5D33B9B3226F963400279F01 /* Sources */,
+				5D33B9B4226F963400279F01 /* Frameworks */,
+				5D33B9B5226F963400279F01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D33B9B9226F963400279F01 /* PBXTargetDependency */,
+			);
+			name = ARCHATUITests;
+			productName = ARCHATUITests;
+			productReference = 5D33B9B7226F963400279F01 /* ARCHATUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D33B98E226F963400279F01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Temurhon ";
+				TargetAttributes = {
+					5D33B995226F963400279F01 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5D33B9AB226F963400279F01 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5D33B995226F963400279F01;
+					};
+					5D33B9B6226F963400279F01 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5D33B995226F963400279F01;
+					};
+				};
+			};
+			buildConfigurationList = 5D33B991226F963400279F01 /* Build configuration list for PBXProject "ARCHAT" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D33B98D226F963400279F01;
+			productRefGroup = 5D33B997226F963400279F01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D33B995226F963400279F01 /* ARCHAT */,
+				5D33B9AB226F963400279F01 /* ARCHATTests */,
+				5D33B9B6226F963400279F01 /* ARCHATUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D33B994226F963400279F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC47EFE226FF6FB004AB0B1 /* VirtualObjects.json in Resources */,
+				5D33B99C226F963400279F01 /* art.scnassets in Resources */,
+				5D33B9A6226F963400279F01 /* LaunchScreen.storyboard in Resources */,
+				5DEB5D712270E60C00A07940 /* Models.scnassets in Resources */,
+				5D33B9A3226F963400279F01 /* Assets.xcassets in Resources */,
+				5D33B9A1226F963400279F01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D33B9AA226F963400279F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D33B9B5226F963400279F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EB44ADA6C240F28CB3F6020 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARCHAT/Pods-ARCHAT-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ApiAI/ApiAI.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApiAI.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARCHAT/Pods-ARCHAT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		708870D40D9A9554DE34A9F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARCHATTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E69B1C0DE20CFA6C8C53018F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARCHATUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F45F8498022B9BB8FAA31E44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARCHAT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D33B992226F963400279F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB926CF226FF58D006134A5 /* VirtualObjectSelectionViewController.swift in Sources */,
+				5DC47F08226FF8A6004AB0B1 /* FocusSquare.swift in Sources */,
+				5D066CD02270C86300304DD9 /* ViewController+Actions.swift in Sources */,
+				5D33B99E226F963400279F01 /* ViewController.swift in Sources */,
+				5DC47F07226FF8A6004AB0B1 /* FocusSquareSegment.swift in Sources */,
+				5DC47F0E226FF8B7004AB0B1 /* SingleFingerGesture.swift in Sources */,
+				5DC47EF7226FF6CC004AB0B1 /* Plane.swift in Sources */,
+				5D066CCF2270C86300304DD9 /* ViewController+ARSCNViewDelegate.swift in Sources */,
+				5D33B99A226F963400279F01 /* AppDelegate.swift in Sources */,
+				5DC47F0C226FF8B7004AB0B1 /* TwoFingerGesture.swift in Sources */,
+				5DC47F0D226FF8B7004AB0B1 /* Gesture.swift in Sources */,
+				5DB926D0226FF58D006134A5 /* SettingsViewController.swift in Sources */,
+				5DC47EFD226FF6FB004AB0B1 /* VirtualObjectManager.swift in Sources */,
+				5DC47EF0226FF6A4004AB0B1 /* SceneExtensions.swift in Sources */,
+				5DC47EEF226FF6A4004AB0B1 /* ARSCNView+HitTests.swift in Sources */,
+				5DC47F00226FF836004AB0B1 /* VirtualObject.swift in Sources */,
+				5DC47EF1226FF6A4004AB0B1 /* Utilities.swift in Sources */,
+				5DC73E60226FA42E007F2499 /* AR.swift in Sources */,
+				5D066CD12270C86300304DD9 /* ViewController+ObjectSelection.swift in Sources */,
+				5DC47EF2226FF6A4004AB0B1 /* TextManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D33B9A8226F963400279F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D33B9B1226F963400279F01 /* ARCHATTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D33B9B3226F963400279F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D33B9BC226F963400279F01 /* ARCHATUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D33B9AE226F963400279F01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D33B995226F963400279F01 /* ARCHAT */;
+			targetProxy = 5D33B9AD226F963400279F01 /* PBXContainerItemProxy */;
+		};
+		5D33B9B9226F963400279F01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D33B995226F963400279F01 /* ARCHAT */;
+			targetProxy = 5D33B9B8226F963400279F01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D33B99F226F963400279F01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D33B9A0226F963400279F01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D33B9A4226F963400279F01 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D33B9A5226F963400279F01 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D33B9BE226F963400279F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D33B9BF226F963400279F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D33B9C1226F963400279F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B68C63D1AAC86686DA9EB44B /* Pods-ARCHAT.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WVF9993U8;
+				INFOPLIST_FILE = ARCHAT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARCHAT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D33B9C2226F963400279F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E46F822C174652BC0FC7B69 /* Pods-ARCHAT.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WVF9993U8;
+				INFOPLIST_FILE = ARCHAT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARCHAT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5D33B9C4226F963400279F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F9D856A9DC46CC45DC388FE /* Pods-ARCHATTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WVF9993U8;
+				INFOPLIST_FILE = ARCHATTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARCHATTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARCHAT.app/ARCHAT";
+			};
+			name = Debug;
+		};
+		5D33B9C5226F963400279F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE0D8153560F05B4770EF7CE /* Pods-ARCHATTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WVF9993U8;
+				INFOPLIST_FILE = ARCHATTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARCHATTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARCHAT.app/ARCHAT";
+			};
+			name = Release;
+		};
+		5D33B9C7226F963400279F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A48EAB86B7B66F7DB819116A /* Pods-ARCHATUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WVF9993U8;
+				INFOPLIST_FILE = ARCHATUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARCHATUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARCHAT;
+			};
+			name = Debug;
+		};
+		5D33B9C8226F963400279F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 334789E0E281E82241E831FC /* Pods-ARCHATUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WVF9993U8;
+				INFOPLIST_FILE = ARCHATUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ARCHATUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARCHAT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D33B991226F963400279F01 /* Build configuration list for PBXProject "ARCHAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D33B9BE226F963400279F01 /* Debug */,
+				5D33B9BF226F963400279F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D33B9C0226F963400279F01 /* Build configuration list for PBXNativeTarget "ARCHAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D33B9C1226F963400279F01 /* Debug */,
+				5D33B9C2226F963400279F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D33B9C3226F963400279F01 /* Build configuration list for PBXNativeTarget "ARCHATTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D33B9C4226F963400279F01 /* Debug */,
+				5D33B9C5226F963400279F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D33B9C6226F963400279F01 /* Build configuration list for PBXNativeTarget "ARCHATUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D33B9C7226F963400279F01 /* Debug */,
+				5D33B9C8226F963400279F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D33B98E226F963400279F01 /* Project object */;
+}
